@@ -1,0 +1,16 @@
+# Exception handling
+try:
+ num1 =int(input("Enter your first number: "))
+ num2 =int(input("Enter your second number: "))
+
+ dev = num1/num2
+
+ print(dev)
+except ZeroDivisionError:
+    print("You cannot divide by zero!")
+except ValueError:
+    print("Please enter a valid number!")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+finally:
+    print("This is the end of the program.")
